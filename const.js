@@ -74,3 +74,15 @@ for (const surfProduct of inventory) {
         console.log(message)
     }
 }
+
+// Output should read the following:
+// 9 ft longboard surfboard is a surfboard
+// 5 ft shortboard surfboard is a surfboard
+// Full wetsuit with hood and boots is a clothing product
+// Surfboard leash is currently on sale
+// Surf wax is currently on sale
+// Surfboard fins is currently on sale
+// Rashguard shirt is currently on sale
+// Surfboard rack for car is a surfing gear product
+// Beach towel is currently on sale
+// Surfboard repair kit is currently on sale
