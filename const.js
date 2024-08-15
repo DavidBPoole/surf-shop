@@ -86,3 +86,4 @@ for (const surfProduct of inventory) {
 // Surfboard rack for car is a surfing gear product
 // Beach towel is currently on sale
 // Surfboard repair kit is currently on sale
+// .
