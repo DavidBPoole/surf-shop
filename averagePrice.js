@@ -31,7 +31,7 @@ const isClothing = (item) => {
     return returnValue
 }
 
-const isSurfboard = (item) => {
+const isSurfbaord = (item) => {
     let returnValue = false
 
     if (item.type === "surfboard") {
@@ -52,10 +52,15 @@ const isGear = (gear) => {
 }
 
 const convertDataForAccounting = (product) => {
-    const upperDescription = product.toUpperCase()
-    const upperPrice = price.toUpperCase()
-    const upperType = type.toUpperCase()
+    const allUpperCase = `${product.description.toUpperCase()} - ${product.type.toUpperCase()} - ${product.price}`
     return allUpperCase
+}
+
+const calculateAveragePrice = (products) => {
+    const allPrices = products.price
+    const averagePrice = allPrices / products.length
+
+    return averagePrice
 }
 
 for (let surfProduct of inventory) {
@@ -70,7 +75,7 @@ for (let surfProduct of inventory) {
     }
 
 
-    if (isSurfboard(surfProduct)) {
+    if (isSurfbaord(surfProduct)) {
         message = `${surfProduct.description} is a surfboard`
     }
 
@@ -85,5 +90,14 @@ for (let surfProduct of inventory) {
 
 console.log("\n------------------------\n")
 
-const modifiedData = convertDataForAccounting(inventory)
-console.log(modifiedData)
+
+for (const product of inventory) {
+    const modifiedData = convertDataForAccounting(product)
+    console.log(modifiedData)
+}
+
+console.log("\n------------------------\n")
+
+const averagePrice = calculateAveragePrice(inventory)
+
+console.log(averagePrice)
