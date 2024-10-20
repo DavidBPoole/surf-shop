@@ -87,4 +87,3 @@ console.log("\n------------------------\n")
 
 const modifiedData = convertDataForAccounting(inventory)
 console.log(modifiedData)
-// added code to file............
