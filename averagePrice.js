@@ -56,11 +56,20 @@ const convertDataForAccounting = (product) => {
     return allUpperCase
 }
 
-const calculateAveragePrice = (products) => {
-    const allPrices = products.price
-    const averagePrice = allPrices / products.length
+// const calculateAveragePrice = (products) => {
+//     const allPrices = products.price
+//     const averagePrice = allPrices / products.length
 
-    return averagePrice
+//     return averagePrice
+// }
+
+const calculateAveragePrice = (products) => {
+    // Get the sum of all prices using reduce
+    const totalPrices = products.reduce((sum, product) => sum + product.price, 0);
+    // Calculate the average by dividing the total by the number of products
+    const averagePrice = totalPrices / products.length;
+
+    return averagePrice;
 }
 
 for (let surfProduct of inventory) {
