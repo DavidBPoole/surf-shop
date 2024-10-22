@@ -110,3 +110,5 @@ console.log("\n------------------------\n")
 const averagePrice = calculateAveragePrice(inventory)
 
 console.log(averagePrice)
+
+// completed exercise
