@@ -111,4 +111,4 @@ const averagePrice = calculateAveragePrice(inventory)
 
 console.log(averagePrice)
 
-// completed exercise.
+// completed exercise..
