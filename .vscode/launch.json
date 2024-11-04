@@ -6,7 +6,7 @@
       "request": "launch",
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/averagePrice.js" // Ensure this points to your main JavaScript file
+      "program": "${workspaceFolder}/functions.js" // Ensure this points to your main JavaScript file
     }
   ]
 }
