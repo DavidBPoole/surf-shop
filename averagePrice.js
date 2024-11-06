@@ -118,4 +118,4 @@ const {
 
 // console.log(averagePrice)
 
-// // completed exercise
+// // completed exercise.
